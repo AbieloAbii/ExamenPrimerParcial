@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="aaguirreexamen.Vistas.login"
+             Title="login">
+    <VerticalStackLayout Spacing="20" Padding="50">
+        <Label 
+            Text="LOGIN"
+            TextColor="Red"
+            HorizontalOptions="Center"
+            FontSize="20" />
+        <Image Source="https://revista.uisrael.edu.ec/images/uisrael.png"
+       WidthRequest="300"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Usuario" FontSize="18" Grid.Row="0" Grid.Column="0"></Label>
+            <Entry x:Name="entryUsuario" Placeholder="Ingrese el usuario" Grid.Row="0" Grid.Column="1"></Entry>
+            <Label Text="Contraseña" FontSize="18" Grid.Row="1" Grid.Column="0"></Label>
+            <Entry x:Name="entryContrasena" Placeholder="Ingrese su contraseña" Grid.Row="1" Grid.Column="1" IsPassword="True"></Entry>
+            <Button x:Name="btnIniciar" Text="Iniciar Sesión" Clicked="btnIniciar_Clicked" Grid.Row="3" Grid.Column="0"></Button>
+            <Button x:Name="btnAcerca" Text="Acerca de" Clicked="btnIniciar_Clicked_1" Grid.Row="3" Grid.Column="1"></Button>
+        </Grid>
+        
+    </VerticalStackLayout>
+</ContentPage>

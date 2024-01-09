@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="aaguirreexamen.Vistas.resumen"
+             Title="resumen">
+    <VerticalStackLayout Spacing="20" Padding="50">
+        <Label x:Name="lblUsuario" FontSize="18" HorizontalTextAlignment="End" TextColor="Red"></Label>
+        <Label 
+            Text="RESUMEN"
+            FontSize="22"
+            TextColor="Red"
+            HorizontalOptions="Center" />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Etiquetas -->
+            <Label Text="Nombre" FontSize="18" Grid.Row="0" Grid.Column="0"/>
+            <Label Text="Apellido" FontSize="18" Grid.Row="1" Grid.Column="0"/>
+            <Label Text="Edad" FontSize="18" Grid.Row="2" Grid.Column="0"/>
+            <Label Text="Fecha" FontSize="18" Grid.Row="3" Grid.Column="0"/>
+            <Label Text="Ciudad" FontSize="18" Grid.Row="4" Grid.Column="0"/>
+            <Label Text="País" FontSize="18" Grid.Row="5" Grid.Column="0"/>
+            <Label Text="Monto Inicial" FontSize="18" Grid.Row="6" Grid.Column="0"/>
+            <Label Text="Pago Mensual" FontSize="18" Grid.Row="7" Grid.Column="0"/>
+            <Label Text="Total" FontSize="18" Grid.Row="8" Grid.Column="0"></Label>
+            <!-- Valores -->
+            <Label x:Name="lblNombre" FontSize="18" Grid.Row="0" Grid.Column="1"/>
+            <Label x:Name="lblApellido" FontSize="18" Grid.Row="1" Grid.Column="1"/>
+            <Label x:Name="lblEdad" FontSize="18" Grid.Row="2" Grid.Column="1"/>
+            <Label x:Name="lblFecha" FontSize="18" Grid.Row="3" Grid.Column="1"/>
+            <Label x:Name="lblCiudad" FontSize="18" Grid.Row="4" Grid.Column="1"/>
+            <Label x:Name="lblPais" FontSize="18" Grid.Row="5" Grid.Column="1"/>
+            <Label x:Name="lblMontoInicial" FontSize="18" Grid.Row="6" Grid.Column="1"/>
+            <Label x:Name="lblPagoMensual" FontSize="18" Grid.Row="7" Grid.Column="1"/>
+
+            <Label x:Name="lblPagoTotal" FontSize="18" Grid.Row="8" Grid.Column="1" Text="Pago Total"/>
+        </Grid>
+        <Button x:Name="btnCerrarSesion" Text="Cerrar Sesion" Clicked="btnCerrarSesion_Clicked"></Button>
+    </VerticalStackLayout>
+</ContentPage>
